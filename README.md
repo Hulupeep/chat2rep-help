@@ -6,9 +6,50 @@
 
 ## Quick Links
 
-| [How to Install](INSTALL) | [How to Get the Most Out of chat2repo](GUIDE) |
-|:-------------------------:|:---------------------------------------------:|
-| Step-by-step setup guide | Tips, patterns, and best practices |
+| [Getting Started](INSTALL) | [How to Use](GUIDE) | [Pro Version](#roadmap-pro-version-coming-soon) | [Talk to Us](#get-in-touch) |
+|:--------------------------:|:-------------------:|:-----------------------------------------------:|:---------------------------:|
+
+---
+
+## The Philosophy
+
+### Your Knowledge Is Leaking
+
+Every day, you lose knowledge. Not dramatically — quietly.
+
+You debug a tricky issue and finally understand why it happens. A week later, you've forgotten. You have a conversation with ChatGPT that crystallizes your thinking on a problem. A month later, it's buried in history. You make a decision with careful reasoning. Six months later, you can't remember why.
+
+This isn't a memory problem. It's a capture problem.
+
+### The Capture Gap
+
+You *could* write things down. But you don't. Not because you're lazy — because the friction is too high. Opening a notes app, deciding where to put it, formatting it, switching back to what you were doing... it takes 30 seconds and breaks your flow.
+
+So you tell yourself "I'll remember this" or "I'll document it later." You won't.
+
+### One Click Changes Everything
+
+What if saving knowledge took one click? No app switching. No decisions about where to file it. No formatting. Just: see something valuable, click, done.
+
+That's chat2repo. When the bar is low enough, you actually clear it.
+
+### Why GitHub?
+
+Your GitHub repositories are:
+
+- **Searchable** — grep, GitHub search, your IDE
+- **Readable by AI** — Claude Code, Copilot, and Codex can access your repos
+- **Version controlled** — your knowledge evolves, and you can see how
+- **Portable** — plain markdown files you can move anywhere
+- **Permanent** — no subscription, no shutdown risk, no "freemium" limits
+
+Notes in Notion are Notion's. Notes in Apple Notes are Apple's. Notes in your GitHub repo are *yours*.
+
+### Capture While Understanding
+
+The magic moment is when you're actively thinking about something. That's when you're talking to ChatGPT. That's when documentation should happen — not later when you've forgotten half of it.
+
+chat2repo turns your thinking-out-loud into persistent knowledge.
 
 ---
 
@@ -190,27 +231,58 @@ Market insights, competitive analysis, feature prioritization — save the conve
 
 ## Roadmap: Pro Version Coming Soon
 
-We're building **chat2repo Pro** for teams and power users:
+We're building **chat2repo Pro** for teams and power users.
+
+### Capture More
 
 | Feature | Free | Pro |
 |---------|------|-----|
 | Save ChatGPT messages | Yes | Yes |
 | Save web selections | Yes | Yes |
+| Save from Claude | — | Yes |
+| Save from Gemini | — | Yes |
+| Bulk export ChatGPT history | — | Yes |
+| Browser-wide capture hotkey | — | Yes |
+
+### Organize Better
+
+| Feature | Free | Pro |
+|---------|------|-----|
 | Multiple repositories | 1 | Unlimited |
 | Custom file templates | — | Yes |
 | Auto-tagging with AI | — | Yes |
-| Team shared repositories | — | Yes |
-| Bulk export from ChatGPT | — | Yes |
-| Claude/Gemini support | — | Yes |
-| Priority support | — | Yes |
+| Custom folder structures | — | Yes |
+| Link related notes | — | Yes |
 
-**Interested in Pro?** [Join the waitlist](#) or email us.
+### Work Together
+
+| Feature | Free | Pro |
+|---------|------|-----|
+| Team shared repositories | — | Yes |
+| Create GitHub Issues from chat | — | Yes |
+| Turn conversations into PRs | — | Yes |
+| Shared tag taxonomies | — | Yes |
+
+### Integrate Everywhere
+
+| Feature | Free | Pro |
+|---------|------|-----|
+| Obsidian sync | — | Yes |
+| Raycast/Alfred extension | — | Yes |
+| API access | — | Yes |
+| Webhook notifications | — | Yes |
+
+**Interested in Pro?** [Tell us what you need](https://forms.gle/xa1TzchiEi12phSB6)
 
 ---
 
 ## Get In Touch
 
 We'd love to hear from you.
+
+### Feedback
+
+**[Share your thoughts](https://forms.gle/xa1TzchiEi12phSB6)** — What's working? What's missing? What would make this 10x better?
 
 ### Support
 Having issues? Questions about setup?
@@ -220,10 +292,10 @@ Having issues? Questions about setup?
 Want to integrate chat2repo with your tool? Have a partnership idea?
 **Email**: hello@floutlabs.com
 
-### Make This Better
-Found a bug? Have a feature idea? Want to contribute?
+### Report a Bug
+Found something broken?
 - **GitHub Issues**: [Report an issue](https://github.com/floutlabs/chat2repo/issues)
-- **Email**: feedback@floutlabs.com
+- **Email**: support@floutlabs.com
 
 ### Just Say Hi
 Using chat2repo in an interesting way? We'd love to hear your story.
@@ -246,16 +318,6 @@ Using chat2repo in an interesting way? We'd love to hear your story.
 
 - [Privacy Policy](PRIVACY)
 - [Terms of Service](TERMS)
-
----
-
-## The Philosophy
-
-**Capture while understanding.** The best time to document something is when you're actively thinking about it — and that's exactly when you're talking to ChatGPT.
-
-**Lower the bar to zero.** If saving takes 30 seconds, you won't do it. If it takes one click, you might. Design for the lazy path.
-
-**Own your knowledge.** Notes in someone else's app aren't really yours. Markdown files in your GitHub repo are yours forever.
 
 ---
 
