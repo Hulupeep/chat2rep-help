@@ -4,6 +4,14 @@
 
 ---
 
+## Quick Links
+
+| [How to Install](INSTALL) | [How to Get the Most Out of chat2repo](GUIDE) |
+|:-------------------------:|:---------------------------------------------:|
+| Step-by-step setup guide | Tips, patterns, and best practices |
+
+---
+
 ## Getting Started
 
 ### Step 1: Install the Extension
