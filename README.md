@@ -168,9 +168,17 @@ That's the whole insight. Make capture effortless, and you'll build a knowledge 
 3. Done — it's in your repo
 
 ### Save from Any Web Page
-1. Select text on any page
-2. Right-click → "Save to GitHub"
-3. Done — captured with the source URL
+1. Select any text on any webpage
+2. Right-click → **"Save to GitHub"**
+3. Done — saved with the source URL automatically
+
+**What you can capture:**
+- Stack Overflow answers that solved your problem
+- Documentation snippets you keep coming back to
+- Blog posts with insights you want to remember
+- Error messages and their solutions
+- API references and examples
+- Anything you'd normally bookmark and lose
 
 ### What Gets Saved
 
@@ -211,21 +219,36 @@ your-repo/
 
 You're the only one who knows why the staging server uses port 5433, how to regenerate the SSL certs, and what that 3am cron job does. When you explain it to ChatGPT, save it. Your replacement will thank you.
 
+**From ChatGPT:** Architecture decisions, debugging sessions, code explanations
+**From the web:** Stack Overflow solutions, GitHub issues that fixed your bug, documentation snippets
+
 ### 2. Artists: Build a Reference Library
 
 Color theory, historical costume details, composition principles — save research conversations and build a searchable visual reference library.
+
+**From ChatGPT:** Research conversations, technique explanations, historical context
+**From the web:** Tutorial snippets, reference images descriptions, artist interviews
 
 ### 3. Writers: Externalize Your Style Guide
 
 You've made hundreds of editorial decisions. Why active voice here, why this structure there. Capture the reasoning, and you've got a living style guide.
 
+**From ChatGPT:** Style decisions, grammar explanations, structure discussions
+**From the web:** Style guide excerpts, examples of good writing, editorial standards
+
 ### 4. Managers: Preserve Decision Context
 
 "Why didn't we use MongoDB?" "Why did we hire for this role first?" Six months later, you won't remember. But if you saved the ChatGPT conversation where you thought it through, you've got the answer.
 
+**From ChatGPT:** Decision reasoning, tradeoff analysis, strategy discussions
+**From the web:** Competitor analysis, industry benchmarks, hiring frameworks
+
 ### 5. Product Builders: Document Your Thinking
 
 Market insights, competitive analysis, feature prioritization — save the conversations where you developed your product intuition, and you'll have receipts when you need them.
+
+**From ChatGPT:** Market analysis, user psychology, feature prioritization
+**From the web:** User research quotes, competitor features, market data
 
 ---
 

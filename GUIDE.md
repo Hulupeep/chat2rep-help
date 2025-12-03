@@ -8,7 +8,27 @@ You've installed it. Now here's how to actually build a useful knowledge base.
 
 **Capture while understanding.**
 
-The best time to document something is when you're actively thinking about it. That's exactly when you're talking to ChatGPT. Don't plan to "organize notes later" — you won't. Capture in the moment.
+The best time to document something is when you're actively thinking about it. That's exactly when you're talking to ChatGPT — or when you've finally found that Stack Overflow answer. Don't plan to "organize notes later" — you won't. Capture in the moment.
+
+---
+
+## Two Ways to Capture
+
+### From ChatGPT
+Hover over any assistant message → click the send icon → done.
+
+Best for: explanations, decisions, debugging sessions, ideas you've refined through conversation.
+
+### From Any Web Page
+Select text → right-click → "Save to GitHub" → done.
+
+Best for:
+- **Stack Overflow answers** that actually solved your problem
+- **Documentation snippets** you keep looking up
+- **Blog posts** with insights worth keeping
+- **Error messages + solutions** you'll hit again
+- **API examples** that work
+- **Anything you'd bookmark** (and never find again)
 
 ---
 
