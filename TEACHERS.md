@@ -59,11 +59,28 @@ Once your notes are saved, automated helpers can:
 | What happens | What you get |
 |--------------|--------------|
 | You save something tagged `#LessonPlan` | It's automatically formatted into your standard template |
+| You save `#LessonPlan` | **Quote-checker robot** scans for factual errors before students spot them |
 | You save `#ExamQuestions` | Questions are filed into your growing question bank |
+| You save `#ParentEmail` | Rough notes become polished professional emails |
 | Every morning at 7am | You get an email: "Here's what you created yesterday" |
 | End of term | All your `#Year9` notes compiled into one document |
 
 You don't manage this. You just see: **"I tagged it, and useful things happened."**
+
+#### The Quote-Checker Robot
+
+*Stops the "Joan of Arc in Galway" moments.*
+
+Every lesson plan gets a quiet second pair of eyes. A little robot checks your quotes, dates, and facts — and warns you if something looks wrong before a student spots it.
+
+Example feedback at the top of your lesson:
+> ⚠️ "Joan of Arc in Galway" — Joan of Arc was French, never in Galway. Did you mean "Joan of Arc in Orléans"?
+>
+> ✅ "1066 Battle of Hastings" — correct.
+
+No extra work. Just click Save — the robot does the rest.
+
+[See all teacher automations →](githubactions#github-actions-for-teachers)
 
 ---
 

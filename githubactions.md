@@ -135,7 +135,7 @@ Your marketing assets become programmatic.
 
 ---
 
-### **10. Deploy a “Chat Replay Memory” for Agents**
+### **10. Deploy a "Chat Replay Memory" for Agents**
 
 When a message contains **#Review**:
 
@@ -143,8 +143,165 @@ When a message contains **#Review**:
 * Extracts decisions, assumptions, constraints
 * Writes them into `/context/context.md`
 * Makes them available to agents for future tasks
-* Prevents drift or “LLM forgetting”
+* Prevents drift or "LLM forgetting"
 
 This creates true, persistent agent memory.
 
- 
+---
+
+## GitHub Actions for Teachers
+
+These actions are specifically designed for educators using chat2repo.
+
+---
+
+### **11. Daily Email Digest — "What You Created Yesterday"**
+
+Every morning at 7am, you get an email:
+
+> "Here's what you created yesterday:
+> - 2 lesson plans (#LessonPlan)
+> - 1 set of exam questions (#ExamQuestions)
+> - 1 parent email template (#ParentEmail)"
+
+**How it works:**
+* Action runs on a schedule (cron: `0 7 * * *`)
+* Scans for files created/modified in the last 24 hours
+* Groups them by tag
+* Sends a summary email via SendGrid or GitHub's notification system
+
+**Zero effort.** You just see what you accomplished.
+
+---
+
+### **12. Auto-Format Lesson Plans**
+
+Anything tagged **#LessonPlan** gets automatically formatted into a consistent template.
+
+**How it works:**
+* Triggers on new files with `#LessonPlan` in front-matter tags
+* Sends content to an AI with a template:
+  - Learning Objectives
+  - Starter (5-10 mins)
+  - Main Activity (25-35 mins)
+  - Plenary (5-10 mins)
+  - Homework
+  - Differentiation notes
+* Overwrites the file with the formatted version
+* All your lessons end up in the same structure
+
+**You get consistency without doing the formatting.**
+
+---
+
+### **13. Build Question Banks From Tags**
+
+Tag something **#ExamQuestions** and it's automatically filed into a growing question bank.
+
+**How it works:**
+* Triggers on `#ExamQuestions` tag
+* Extracts individual questions from the content
+* Files them under `/question-bank/{subject}/{topic}/`
+* Over time, you get a searchable bank of hundreds of questions
+
+**Example structure:**
+```
+question-bank/
+  english/
+    shakespeare/
+      macbeth-act1.md
+      othello-themes.md
+    poetry/
+      unseen-poetry.md
+  maths/
+    algebra/
+      quadratics.md
+```
+
+---
+
+### **14. The Quote-Checker Robot**
+
+*"The robot that stops 'Joan of Arc in Galway' moments."*
+
+Anything saved as a **#LessonPlan** gets a quiet second pair of eyes. A little robot reads it, checks your quotes and facts, and warns you if something looks wrong — before a student spots it.
+
+**How it works:**
+
+1. You create a lesson in ChatGPT
+2. You click Save
+3. The file lands in your repo with tag `#LessonPlan`
+4. GitHub Action triggers:
+   * Sends the lesson text to an AI with a very narrow job:
+   * Find any quotes, dates, names, and big factual claims
+   * For each, say:
+     - ✅ Looks correct, or
+     - ⚠️ Might be wrong / unclear (explain why and suggest a fix)
+5. Writes a short feedback note at the top of the lesson
+
+**Example output:**
+
+```markdown
+## ⚠️ Quote Check: 1 possible issue flagged
+
+- ⚠️ "Joan of Arc in Galway" — Joan of Arc was French, never in Galway.
+  Did you mean "Joan of Arc in Orléans" or another example?
+- ⚠️ Quote attributed to "Shakespeare" is actually from Christopher Marlowe.
+- ✅ Date "1066 Battle of Hastings" — correct.
+
+---
+[Your lesson content below...]
+```
+
+**You see this as:**
+* A status in the daily email: "2 lesson plans checked, 1 needs attention"
+* Or a comment at the top of the lesson file
+
+**Key:** No extra work for you. Just click Save — the robot does the rest.
+
+---
+
+### **15. End-of-Term Compilation**
+
+At the end of term, automatically compile all notes for a year group into one document.
+
+**How it works:**
+* Runs on a schedule (e.g., last Friday of term)
+* Collects all files tagged with a specific year group (`#Year9`)
+* Compiles them into a single PDF or markdown document
+* Organizes by topic, date, or tag
+* Saves to `/compilations/year9-autumn-term.md`
+
+**Use cases:**
+* Revision packs for students
+* Evidence for inspections
+* Handover notes for supply teachers
+
+---
+
+### **16. Parent Email Generator**
+
+Tag something **#ParentEmail** and get a polished, professional version back.
+
+**How it works:**
+* Triggers on `#ParentEmail` tag
+* Takes your rough draft
+* Rewrites in professional school-communication style
+* Adds appropriate greeting/sign-off
+* Saves both original and polished version
+
+**Input:**
+> "Needs to tell parents about the trip next week, permission slips, £15 cost, packed lunch needed"
+
+**Output:**
+> "Dear Parents/Carers,
+>
+> I am writing to remind you about our upcoming trip on [date]. Please ensure your child brings a completed permission slip and £15 contribution by [deadline]. Students will need to bring a packed lunch.
+>
+> If you have any questions, please don't hesitate to contact me.
+>
+> Kind regards,
+> [Teacher name]"
+
+---
+
