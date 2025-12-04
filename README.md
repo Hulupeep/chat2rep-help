@@ -1,13 +1,13 @@
 # chat2repo
 
-**Save ChatGPT conversations to your GitHub repository in one click.**
+**Now Your *Ideas* Live where your *code* Lives.**
 
 ---
 
 ## Quick Links
 
-| [Getting Started](INSTALL) | [How to Use](GUIDE) | [Pro Version](PRO) | [Talk to Us](#get-in-touch) |
-|:--------------------------:|:-------------------:|:------------------:|:---------------------------:|
+| [Setup](INSTALL) | [Daily Use](GUIDE) | [Adding Tags + Magic](TAG_SET_UP)|[Your use case](PRO)|  [Pro Version](PRO) | [Talk to Us](#get-in-touch) |
+
 
 ---
 
@@ -42,6 +42,7 @@ Your GitHub repositories are:
 - **Version controlled** — your knowledge evolves, and you can see how
 - **Portable** — plain markdown files you can move anywhere
 - **Permanent** — no subscription, no shutdown risk, no "freemium" limits
+- **Github Actions -** literally do anything with your notes. Turn them into specs, products, send them, summarize them. 
 
 Notes in Notion are Notion's. Notes in Apple Notes are Apple's. Notes in your GitHub repo are *yours*.
 

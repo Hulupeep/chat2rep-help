@@ -19,6 +19,8 @@ Hover over any assistant message → click the send icon → done.
 
 Best for: explanations, decisions, debugging sessions, ideas you've refined through conversation.
 
+![clicktosend](/images/clicktosend.png)
+
 ### From Any Web Page
 Select text → right-click → "Save to GitHub" → done.
 

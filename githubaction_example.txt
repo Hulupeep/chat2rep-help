@@ -1,0 +1,147 @@
+Example Daily GitHub Action 0 Email me a summary of my stuff from yesterday. 
+
+1. **Runs every morning at 08:00 (UTC)**
+2. **Scans all commits from “yesterday”**
+3. **Extracts any messages/files containing Chat2Repo tags**
+   (`#Spec #Journeys #Ideas #Notes #Review #NextActions #Planning #Design #Research #Writing #Feedback #Project:*`)
+4. **Summarizes them using an LLM (OpenAI)**
+5. **Emails you the summary**
+
+This is a **drop-in workflow**.
+Replace the bold fields marked with `<< >>`.
+
+---
+
+# ✅ **`.github/workflows/daily-chat2repo-summary.yml`**
+
+```yaml
+name: Daily Chat2Repo Summary
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 08:00 UTC every morning
+  workflow_dispatch:
+
+jobs:
+  summarize-tags:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Calculate date range
+        id: dates
+        run: |
+          echo "start=$(date -d 'yesterday 00:00' +%Y-%m-%dT%H:%M:%S)" >> $GITHUB_OUTPUT
+          echo "end=$(date -d 'yesterday 23:59' +%Y-%m-%dT%H:%M:%S)" >> $GITHUB_OUTPUT
+
+      - name: Collect tagged commits
+        id: collect
+        run: |
+          git log --since="${{ steps.dates.outputs.start }}" --until="${{ steps.dates.outputs.end }}" --pretty=format:'%H %s' > commits.txt
+          grep -E "#(Spec|Journeys|Ideas|Notes|Review|NextActions|Planning|Design|Research|Writing|Feedback|Project:)" -i commits.txt > tagged.txt || true
+
+      - name: Prepare prompt for LLM
+        id: prompt
+        run: |
+          echo "Summarize the following Chat2Repo-tagged commits from yesterday and group them by tag:\n" > prompt.txt
+          cat tagged.txt >> prompt.txt
+
+      - name: Call OpenAI to generate summary
+        id: llm
+        run: |
+          SUMMARY=$(curl https://api.openai.com/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $OPENAI_API_KEY" \
+            -d "{
+              \"model\": \"gpt-4.1-mini\",
+              \"messages\": [
+                {\"role\": \"system\", \"content\": \"You summarize developer activity clearly and concisely.\"},
+                {\"role\": \"user\", \"content\": \"$(sed 's/"/\\"/g' prompt.txt)\"}
+              ]
+            }" | jq -r '.choices[0].message.content')
+
+          echo "summary<<EOF" >> $GITHUB_OUTPUT
+          echo "$SUMMARY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Send summary email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: <<SMTP_SERVER>>
+          server_port: <<SMTP_PORT>>
+          username: <<SMTP_USERNAME>>
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "Your Chat2Repo Summary for Yesterday"
+          to: <<YOUR_EMAIL>>
+          from: "Chat2Repo Bot <bot@yourdomain.com>"
+          body: ${{ steps.llm.outputs.summary }}
+```
+
+---
+
+# 🔧 **What You Need to Configure**
+
+### 1. Add your secrets
+
+In your repo:
+
+**Settings → Secrets → Actions**
+
+Add:
+
+* `OPENAI_API_KEY`
+* `SMTP_PASSWORD`
+
+### 2. Replace these placeholders in the YAML
+
+```
+<<SMTP_SERVER>>
+<<SMTP_PORT>>
+<<SMTP_USERNAME>>
+<<YOUR_EMAIL>>
+```
+
+---
+
+# 🧠 **What This Action Actually Does**
+
+### **1. Finds all commits from "yesterday"**
+
+Time-bounded to avoid noise.
+
+### **2. Extracts anything with Chat2Repo tags**
+
+This includes:
+
+* `#Spec`
+* `#Journeys`
+* `#Ideas`
+* `#Notes`
+* `#Review`
+* `#NextActions`
+* `#Planning`
+* `#Design`
+* `#Research`
+* `#Writing`
+* `#Feedback`
+* `#Project:*`
+
+### **3. Sends the commit text to an LLM**
+
+LLM groups them by tag, highlights key points, and writes a clean digest.
+
+### **4. Emails you a neat morning report**
+
+You wake up to a digest of your tagged work.
+
+---
+
+You could also create:
+
+* **A Slack/Discord version instead of email**
+* **A version that includes links to each PR/commit**
+* **A version that writes the summary into `/reports/daily/YYYY-MM-DD.md`**
+* **A mega “Weekly Chat2Repo Report” workflow**
+
