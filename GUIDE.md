@@ -24,10 +24,18 @@ Hover over the END of any assistant message on the right →Click the send (pape
 
 Best for: explanations, decisions, debugging sessions, ideas you've refined through conversation.
 
+
+
+See the example screenshot below: 
+
 ![clicktosend](images/clicktosend.png)
 
 ### From Any Web Page
 Select text → right-click → "Save to GitHub" → done.
+
+
+
+See example screenshot below:
 
 ![webpagesend](images/webpagesend.png)
 
