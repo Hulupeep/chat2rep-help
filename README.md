@@ -6,8 +6,8 @@
 
 ## Quick Links
 
-| [Getting Started](INSTALL) | [How to Use](GUIDE) | [Pro Version](#roadmap-pro-version-coming-soon) | [Talk to Us](#get-in-touch) |
-|:--------------------------:|:-------------------:|:-----------------------------------------------:|:---------------------------:|
+| [Getting Started](INSTALL) | [How to Use](GUIDE) | [Pro Version](PRO) | [Talk to Us](#get-in-touch) |
+|:--------------------------:|:-------------------:|:------------------:|:---------------------------:|
 
 ---
 
@@ -123,43 +123,6 @@ You're ready!
 
 ---
 
-## Why This Little Extension Matters
-
-### Your Knowledge Is Disappearing
-
-You've had hundreds of valuable conversations with ChatGPT:
-- Debugging sessions that finally cracked a tricky bug
-- Explanations that made complex concepts click
-- Decisions you reasoned through with AI help
-- Ideas you brainstormed and refined
-
-Where are they now? Scattered across ChatGPT's history, unsearchable, inaccessible to your tools, one "Clear history" away from gone.
-
-### The Problem with Note-Taking Apps
-
-You could copy-paste into Notion, Obsidian, or Apple Notes. But:
-- It takes 30 seconds each time (so you won't do it)
-- Those notes sit in silos, disconnected from your code
-- AI coding assistants can't read them
-- If the company shuts down or you stop paying, they're gone
-
-### Why GitHub Changes Everything
-
-Your GitHub repositories are:
-- **Searchable** — by grep, GitHub search, and your IDE
-- **Accessible to AI** — Claude Code and Codex can read your repos
-- **Version controlled** — see how your thinking evolved
-- **Truly yours** — plain markdown files you can move anywhere
-- **Permanent** — GitHub will outlive most startups
-
-### One Click Changes the Equation
-
-When saving takes one click instead of thirty seconds, you actually do it.
-
-That's the whole insight. Make capture effortless, and you'll build a knowledge base without trying.
-
----
-
 ## How to Use It
 
 ### Save from ChatGPT
@@ -252,50 +215,18 @@ Market insights, competitive analysis, feature prioritization — save the conve
 
 ---
 
-## Roadmap: Pro Version Coming Soon
+## Ready for Pro?
 
-We're building **chat2repo Pro** for teams and power users.
+We're building **chat2repo Pro** — from knowledge capture to automatic product creation.
 
-### Capture More
+**The hero feature: "Go Build This"**
+Turn a conversation into a working MVP. Capture an idea, and a cloud agent scaffolds your project, stubs the UI, sets up the backend, and opens a PR. You get a notification: *"Your MVP is ready."*
 
-| Feature | Free | Pro |
-|---------|------|-----|
-| Save ChatGPT messages | Yes | Yes |
-| Save web selections | Yes | Yes |
-| Save from Claude | — | Yes |
-| Save from Gemini | — | Yes |
-| Bulk export ChatGPT history | — | Yes |
-| Browser-wide capture hotkey | — | Yes |
+Plus: Claude/Gemini support, unlimited repos, AI auto-tagging, team collaboration, Obsidian sync, and more.
 
-### Organize Better
+**Beta spots available:** 25 (first come, first served)
 
-| Feature | Free | Pro |
-|---------|------|-----|
-| Multiple repositories | 1 | Unlimited |
-| Custom file templates | — | Yes |
-| Auto-tagging with AI | — | Yes |
-| Custom folder structures | — | Yes |
-| Link related notes | — | Yes |
-
-### Work Together
-
-| Feature | Free | Pro |
-|---------|------|-----|
-| Team shared repositories | — | Yes |
-| Create GitHub Issues from chat | — | Yes |
-| Turn conversations into PRs | — | Yes |
-| Shared tag taxonomies | — | Yes |
-
-### Integrate Everywhere
-
-| Feature | Free | Pro |
-|---------|------|-----|
-| Obsidian sync | — | Yes |
-| Raycast/Alfred extension | — | Yes |
-| API access | — | Yes |
-| Webhook notifications | — | Yes |
-
-**Interested in Pro?** [Tell us what you need](https://forms.gle/xa1TzchiEi12phSB6)
+[**See all Pro features & join the waitlist →**](PRO)
 
 ---
 
@@ -317,7 +248,7 @@ Want to integrate chat2repo with your tool? Have a partnership idea?
 
 ### Report a Bug
 Found something broken?
-- **GitHub Issues**: [Report an issue](https://github.com/floutlabs/chat2repo/issues)
+- **GitHub Issues**: [Report an issue](https://github.com/Hulupeep/chat2rep-help/issues/new)
 - **Email**: support@floutlabs.com
 
 ### Just Say Hi

@@ -78,6 +78,24 @@ Instead of saving a long back-and-forth, ask:
 
 Then save that summary. Cleaner, more useful.
 
+### Add Hashtags Inline
+
+**chat2repo automatically extracts hashtags from your content.**
+
+Just include hashtags anywhere in the text:
+
+> "Summarize our discussion #architecture #decisions #api-design"
+
+Those become searchable tags automatically — no extra step needed.
+
+This works great with ChatGPT:
+- Ask: "Summarize this and add relevant hashtags at the end"
+- ChatGPT responds with: "...summary... #react #debugging #hooks"
+- You save it — tags extracted automatically
+
+**Pro tip:** End your prompts with `#tags` you want:
+> "Explain why we chose PostgreSQL #database #decisions #project-atlas"
+
 ### Use Tags Strategically
 
 Tags make things findable. Some patterns that work:
@@ -206,7 +224,7 @@ Don't edit extensively before saving. Capture fast, in the moment. You can alway
 
 ### Forgetting Tags
 
-Untagged notes are hard to find. Take 2 seconds to add relevant tags. Your future self will thank you.
+Untagged notes are hard to find. Use inline hashtags (`#like-this`) — they're extracted automatically. Or set default tags in Settings for tags you always want.
 
 ---
 

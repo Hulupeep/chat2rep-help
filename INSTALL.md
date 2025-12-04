@@ -1,6 +1,19 @@
 # How to Install chat2repo
 
-Get up and running in 5 minutes.
+Get up and running in 5 minutes. **No technical knowledge required.**
+
+---
+
+## Don't Have a GitHub Account?
+
+**No problem.** GitHub is free and takes 2 minutes to set up:
+
+1. Go to [github.com/join](https://github.com/join)
+2. Enter your email, create a password, pick a username
+3. Verify your email
+4. Done — you now have a GitHub account
+
+That's the only prerequisite. Everything else below takes another 3 minutes.
 
 ---
 
@@ -28,17 +41,16 @@ Then in Chrome:
 
 ## Step 2: Create a GitHub Token
 
-The extension needs permission to create files in your repository.
+**If you have a GitHub account, you already have a token page. 10 seconds to create:**
 
 1. Go to [github.com/settings/tokens](https://github.com/settings/tokens)
-2. Click **"Generate new token"**
-3. Select **"Generate new token (classic)"**
-4. Fill in:
+2. Click **"Generate new token (classic)"**
+3. Fill in:
    - **Note**: `chat2repo` (or any name you'll remember)
    - **Expiration**: Choose based on your preference (90 days, 1 year, or no expiration)
    - **Scopes**: Check only **`repo`** (Full control of private repositories)
-5. Click **"Generate token"**
-6. **Copy the token immediately** — you won't see it again!
+4. Click **"Generate token"**
+5. **Copy the token immediately** — you won't see it again!
 
 ### Why does it need `repo` scope?
 
@@ -48,16 +60,17 @@ The `repo` scope is the minimum permission that allows creating files. There's n
 
 ## Step 3: Create a Repository
 
-If you already have a repo you want to use, skip to Step 4.
+**Don't have a repo? No problem — 30 seconds to create one:**
 
 1. Go to [github.com/new](https://github.com/new)
 2. **Repository name**: Something like `knowledge`, `notes`, `second-brain`, or `chat-notes`
-3. **Description**: Optional, e.g., "My captured knowledge from ChatGPT"
-4. **Visibility**:
-   - **Private** — Only you can see it (recommended)
-   - **Public** — Anyone can see your notes
-5. Check **"Add a README file"** (initializes the repo)
-6. Click **"Create repository"**
+3. **Visibility**: **Private** (recommended — only you can see it)
+4. Check **"Add a README file"** (initializes the repo)
+5. Click **"Create repository"**
+
+That's it. You now have a place for your notes.
+
+> **Already have a repo?** Skip to Step 4. You can use any existing repo.
 
 ---
 
