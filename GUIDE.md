@@ -15,14 +15,21 @@ The best time to document something is when you're actively thinking about it. T
 ## Two Ways to Capture
 
 ### From ChatGPT
-Hover over any assistant message → click the send icon → done.
+
+
+
+Hover over the END of any assistant message on the right →Click the send (paper airplane) icon at the bottom → done.  
+
+![Look for the paper airplane!](images/send.svg)
 
 Best for: explanations, decisions, debugging sessions, ideas you've refined through conversation.
 
-![clicktosend](/images/clicktosend.png)
+![clicktosend](images/clicktosend.png)
 
 ### From Any Web Page
 Select text → right-click → "Save to GitHub" → done.
+
+![webpagesend](images/webpagesend.png)
 
 Best for:
 - **Stack Overflow answers** that actually solved your problem
@@ -72,7 +79,7 @@ Those shower thoughts fade fast. When you flesh them out with ChatGPT, save them
 
 ## How to Capture Well
 
-### Ask ChatGPT to Summarize for You
+#### Ask ChatGPT to Summarize for You
 
 Instead of saving a long back-and-forth, ask:
 
@@ -80,7 +87,13 @@ Instead of saving a long back-and-forth, ask:
 
 Then save that summary. Cleaner, more useful.
 
-### Add Hashtags Inline
+
+
+#### Get ChatGPT to automatically add hashtags
+
+[See the instructions](TAG_SETUP_UP.md)_ to add hashtags automatically to relevant chats. 
+
+#### Add Hashtags Inline 
 
 **chat2repo automatically extracts hashtags from your content.**
 
@@ -98,7 +111,7 @@ This works great with ChatGPT:
 **Pro tip:** End your prompts with `#tags` you want:
 > "Explain why we chose PostgreSQL #database #decisions #project-atlas"
 
-### Use Tags Strategically
+#### Use Tags Strategically
 
 Tags make things findable. Some patterns that work:
 
@@ -119,7 +132,7 @@ Tags make things findable. Some patterns that work:
 
 Set your most common tags as defaults in Settings.
 
-### Create a Capture Habit
+### Create a Capture Habit - the mental model
 
 The tool only works if you use it. Some triggers:
 
@@ -130,7 +143,9 @@ The tool only works if you use it. Some triggers:
 
 ---
 
-## How to Use Your Captured Knowledge
+## How to Use Your Captured Knowledg
+
+
 
 ### Search on GitHub
 
@@ -145,6 +160,12 @@ Clone your repo and grep:
 ```bash
 grep -r "migration" ~/repos/knowledge/
 ```
+
+#### Github Actions - the real magic
+
+[Set up Github Actions based on your tags](githubactions.md)
+
+
 
 ### Let AI Assistants Read It
 
