@@ -259,6 +259,29 @@ Untagged notes are hard to find. Use inline hashtags (`#like-this`) — they're 
 
 ---
 
+## Editing Tags After You Save
+
+**You can always change tags later — it's easy.**
+
+When you save something, a little notification pops up with a link to your note. Click that link and you'll land directly on the file in GitHub.
+
+From there:
+1. Click the **pencil icon** (top right of the file) to edit
+2. Find the `tags:` section at the top
+3. Add, remove, or change any tags you want
+4. Click **"Commit changes"** at the bottom
+
+That's it — your tags are updated.
+
+**Why this matters:**
+- You don't have to get tags perfect when you save
+- Capture fast in the moment, tidy up later if needed
+- See a better tag after reading your note? Add it right there
+
+**Pro tip:** If you miss the notification, just go to your repo and find the note in the date folder (e.g., `chat-notes/2025/12/04/`). The most recent one is usually at the top.
+
+---
+
 ## Building a Second Brain
 
 chat2repo is one piece of a "second brain" — an external system that holds your knowledge so your actual brain doesn't have to.
