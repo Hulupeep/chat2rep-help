@@ -6,7 +6,7 @@
 
 ## Quick Links
 
-| [Setup](INSTALL) | [Daily Use](GUIDE) | [Adding Tags + Magic](TAG_SET_UP)|[Your use case](PRO)|  [Pro Version](PRO) | [Talk to Us](#get-in-touch) |
+| [Setup](INSTALL) | [Daily Use](GUIDE) | [Tags & Magic](TAG_SET_UP) | [For Teachers](TEACHERS) | [Pro Version](PRO) | [Talk to Us](#get-in-touch) |
 
 
 ---
