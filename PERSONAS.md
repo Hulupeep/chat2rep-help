@@ -8,9 +8,9 @@
 
 You already use ChatGPT for your work. You already have great conversations.
 
-The problem? Those ideas disappear into chat history.
+The problem? Those ideas disappear into chat history.Yes, there's 'search' but what exactly are you looking for? Sad but true: Your assistant needs an assitant. What a world!
 
-chat2repo captures them with one click, organizes them automatically, and — with a bit of setup — triggers "little robots" that format, check, compile, and email your work back to you.
+chat2repo captures them with one click, organizes them automatically, and — with a bit of setup — triggers "little robots" that format, check, compile, and email your work back to you. Plus lots of other fun stuff that makes your life easier and your brain focusing on working not remembering.
 
 **Pick your role below to see what's possible.**
 
